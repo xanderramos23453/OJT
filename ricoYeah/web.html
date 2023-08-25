@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"  href="web.css">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="ricob.png" class="logo">
+            <ul>
+                <li><a href="web.html">Home </a></li>
+                <li><a href="">More</a></li>
+                <li><a href="">contact</a></li>
+            </ul>
+            <button type="button" onclick="toggleBtn()" id="Btn"><span></span></button>
+
+        </nav>
+        <div class="lamp-container">
+            <img src="lamp.png" class="lamp">
+            <img src="lamplight.png" class="lamplight" id="lamplight">
+            <img src="pcguy.png" class="pcguy" id="pcguy">
+        </div>
+        <div class="text-container">
+            <h1>Build your <br> Dream Gaming computer</h1>
+            <P>By: EKO PC</P>
+            <div class="tran">
+                <a href="5ways.html">5 Ways to live life to the fullest
+                </a>
+            </div>
+            <div class="control">
+                <p>04</p>
+                <div class="line"><span></span></div>
+                <p>05</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var Btn = document.getElementById("Btn");
+        var lamplight = document.getElementById("lamplight");
+        var pcguy = document.getElementById('pcguy');
+        function toggleBtn(){
+            Btn.classList.toggle("active");
+            lamplight.classList.toggle("on");
+            pcguy.classList.toggle('on');
+        }
+    </script>
+</body>
+</html>
